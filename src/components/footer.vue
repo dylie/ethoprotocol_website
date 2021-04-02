@@ -12,11 +12,11 @@
       </div>
     </div>
     <!-- Tap on Ends -->
-    <color/>
+    <explorer/>
   </div>
 </template>
 <script>
 export default {
-  name: 'Footer'
-}
+  name: 'Footer',
+};
 </script>
