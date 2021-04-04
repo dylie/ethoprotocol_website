@@ -409,6 +409,31 @@ ul {
     }
   }
 }
+.btn-tools {
+  font-size: 15px;
+  font-weight: 400;
+  color: $color_tapa;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 20px 10px 20px 10px;
+  letter-spacing: 1px;
+  transition:all 0.3s ease;
+  &:hover{
+    color: $color_bright_turquoise;
+    transition:all 0.3s ease;
+    outline: none !important;
+  }
+  &:active {
+    background-color: #f8f9fa !important;
+  }
+  &:focus {
+    outline: none !important;
+  }
+}
+
 .btn-custom {
   color: $white;
   font-size: 14px;
@@ -440,7 +465,7 @@ ul {
   width: 50px;
   height: 50px;
   position: fixed;
-  bottom: 150px;
+  bottom: 30px;
   right: 30px;
   z-index: 99;
   color: $white;
@@ -1800,6 +1825,7 @@ ul {
 
 .testimonial-block {
   position: relative;
+  height: 300px;
   padding: 80px;
   padding-left: 30px;
   padding-right: 30px;
@@ -1853,10 +1879,10 @@ ul {
   text-align: center;
   box-shadow: 0 0 65px 0 $color_silver_chalice_25;
   background-color: $white;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   margin-bottom: 100px;
   h3 {
     color: $color_bright_turquoise;
@@ -2228,10 +2254,34 @@ ul {
   background: $color_caribbean_green;
 }
 
+.staking-contracts {
+  overflow: auto !important;
+}
+
+.transactions {
+  position: fixed;
+  right: 0px;
+  top: 430px;
+  width: 600px;
+  z-index: -1;
+
+  .section {
+    background: $white;
+    padding: 20px;
+    border: 1px solid $color_bright_turquoise;
+    overflow: auto;
+    height: 600px;
+
+    table th:nth-child(3), td:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
 .color-picker {
   position: fixed;
   right: 600px;
-  top: 200px;
+  top: 155px;
   width: 600px;
   z-index: 9;
   transition: all .1s ease;
@@ -2258,8 +2308,8 @@ ul {
   a.handle {
     position: absolute;
     right: 600px;
-    width: 110px;
-    height: 49px;
+    width: 90px;
+    height: 10px;
     color: $white;
     transition: all ease-in 0.3s;
     display: flex;
@@ -2267,7 +2317,7 @@ ul {
     justify-content: center;
     font-size: 25px;
     z-index: -1;
-    border-radius: 50%;
+    border-radius: 25%;
     text-decoration: none;
     background: $color_bright_turquoise;
     top: -20px;
@@ -2294,6 +2344,24 @@ ul {
     &.actt {
       border: 2px $white solid;
     }
+  }
+  a.expand {
+    position: absolute;
+    right: 450px;
+    width: 110px;
+    height: 20px;
+    color: $white;
+    transition: all ease-in 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    z-index: 99;
+    border-radius: 50%;
+    text-decoration: none;
+    background: $color_bright_turquoise;
+    top: 160px;
+    border: 1px solid $white;
   }
 }
 

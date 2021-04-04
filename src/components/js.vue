@@ -1,15 +1,11 @@
 <template>
-    <div>
-    <div></div>
-    <div id="fb-root"></div>
-    <div class="fb-customerchat"
-         attribution=setup_tool
-         page_id="2123438804574660"
-         theme_color="#18ECD6"
-         logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?"
-         logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?">
-    </div>
-    </div>
+<div>
+  <div></div>
+  <div id="fb-root"></div>
+  <div class="fb-customerchat" attribution=setup_tool page_id="2123438804574660" theme_color="#18ECD6" logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?"
+    logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?">
+  </div>
+</div>
 </template>
 <script>
 import $ from 'jquery';
@@ -25,7 +21,8 @@ export default {
         (function (d, s, id) {
           const fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
-          const js = d.createElement(s); js.id = id;
+          const js = d.createElement(s);
+          js.id = id;
           js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
@@ -55,7 +52,7 @@ export default {
             // eslint-disable-next-line func-names
             function () {
               if (!$(this).hasClass('dropdown-toggle')) {
-              // console.log('click');
+                // console.log('click');
                 $('.navbar-collapse').collapse('hide');
               }
             });
@@ -95,11 +92,12 @@ export default {
           $('nav a').on('click', function (event) {
             if (this.hash !== '') {
               event.preventDefault();
-              const { hash } = this;
+              const {
+                hash,
+              } = this;
               $('html, body').animate({
                 scrollTop: $(hash).offset().top - 0,
-              }, 1000, () => {
-              });
+              }, 1000, () => {});
               return false;
             }
             return null;
@@ -109,11 +107,12 @@ export default {
           $('nav a').on('click', function (event) {
             if (this.hash !== '') {
               event.preventDefault();
-              const { hash } = this;
+              const {
+                hash,
+              } = this;
               $('html, body').animate({
                 scrollTop: $(hash).offset().top - 0,
-              }, 1000, () => {
-              });
+              }, 1000, () => {});
               return false;
             }
             return null;

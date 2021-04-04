@@ -9,13 +9,15 @@
     "start": "npm run dev",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src",
+    "lint": "eslint --ext .js,.vue src --fix",
     "build": "node build/build.js"
   },
   "dependencies": {
     "@xkeshi/vue-countdown": "^1.0.1",
     "add": "^2.0.6",
     "bootstrap-vue": "^2.0.0-rc.11",
+    "datatables.net": "^1.10.24",
+    "datatables.net-jqui": "^1.10.24",
     "or": "^0.2.0",
     "smart-buffer": "^1.1.15",
     "v-owl-carousel": "^1.0.7",
@@ -32,6 +34,7 @@
     "vue-window-modal": "git+https://github.com/ropbla9/vue-window-modal.git",
     "vuejs-countdown": "^0.2.1",
     "vuetify": "^1.2.6",
+    "web3": "^1.2.9",
     "yarn": "^1.10.1"
   },
   "devDependencies": {
@@ -69,7 +72,7 @@
     "jquery": "^3.3.1",
     "nightwatch": "^0.9.12",
     "node-notifier": "^5.1.2",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
